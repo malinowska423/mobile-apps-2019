@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="79dp"
+            android:layout_height="67dp" tools:srcCompat="@tools:sample/backgrounds/scenic[8]"
+            android:id="@+id/taskImage" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1" android:scaleType="fitCenter"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/taskPriority"
+            app:layout_constraintStart_toEndOf="@+id/taskImage" android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp" app:layout_constraintTop_toBottomOf="@+id/taskTitle"
+            android:textSize="14sp" android:textStyle="italic" android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#fff" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/taskDue"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/taskDue"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/taskTitle"
+            android:textSize="10sp" android:fontFamily="sans-serif-thin" android:textColor="#fff"
+            app:layout_constraintStart_toEndOf="@+id/taskPriority" android:layout_marginStart="8dp"
+            android:textAlignment="textEnd"/>
+    <TextView
+            android:text="Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/taskTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/taskImage" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" android:textAlignment="viewStart" android:textAllCaps="false"
+            android:fontFamily="sans-serif-condensed-light" android:textSize="24sp"
+            android:textColor="@color/colorPrimary"/>
+</android.support.constraint.ConstraintLayout>

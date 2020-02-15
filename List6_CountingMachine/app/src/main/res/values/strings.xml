@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Counting Machine</string>
+    <string name="error_message">something went wrong</string>
+    <string name="hint_message">put your expression here</string>
+    <string-array name="functions">
+        <item>Simplify</item>
+        <item>Factor</item>
+        <item>Derive</item>
+        <item>Integrate</item>
+        <item>Find 0\'s</item>
+        <item>Find\nTangent</item>
+        <item>Area\nUnder\nCurve</item>
+        <item>Cosine</item>
+        <item>Sine</item>
+        <item>Tangent</item>
+        <item>Inverse\nCosine</item>
+        <item>Inverse \nSine</item>
+        <item>Inverse \nTangent</item>
+        <item>Absolute\nValue</item>
+        <item>Logarithm</item>
+    </string-array>
+    <string-array name="functions_codes">
+        <item>simplify</item>
+        <item>factor</item>
+        <item>derive</item>
+        <item>integrate</item>
+        <item>zeroes</item>
+        <item>tangent</item>
+        <item>area</item>
+        <item>cos</item>
+        <item>sin</item>
+        <item>tan</item>
+        <item>arccos</item>
+        <item>arcsin</item>
+        <item>arctan</item>
+        <item>abs</item>
+        <item>log</item>
+    </string-array>
+</resources>

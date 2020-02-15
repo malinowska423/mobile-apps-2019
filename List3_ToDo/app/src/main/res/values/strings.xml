@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Do.IT</string>
+    <string name="new_item">Add task</string>
+    <string name="settings">Settings</string>
+    <string name="title">What do you have to do?</string>
+    <string name="date">When?</string>
+    <string name="priority">How important it is?</string>
+    <string name="prio_radio_low">trivial</string>
+    <string name="prio_radio_norm">normal</string>
+    <string name="prio_radio_high">important</string>
+    <string name="type">What type of task is this?</string>
+    <string name="type_radio_1">home</string>
+    <string name="type_radio_2">office</string>
+    <string name="type_radio_3">school</string>
+    <string name="type_radio_4">custom</string>
+    <string name="saveBtn">SAVE</string>
+    <string name="errorMessage">All fields are required</string>
+    <string-array name="dateArray">
+        <item>today</item>
+        <item>tomorrow</item>
+        <item>this week</item>
+        <item>someday</item>
+    </string-array>
+    <string-array name="priorityArray">
+        <item>important</item>
+        <item>normal</item>
+        <item>trivial</item>
+    </string-array>
+    <string-array name="typeArray">
+        <item>home</item>
+        <item>office</item>
+        <item>school</item>
+        <item>custom</item>
+    </string-array>
+</resources>

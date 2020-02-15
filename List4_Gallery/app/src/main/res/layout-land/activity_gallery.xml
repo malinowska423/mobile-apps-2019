@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GalleryActivity" android:weightSum="7" android:orientation="horizontal">
+
+    <fragment android:layout_width="match_parent" android:layout_height="match_parent"
+              android:id="@+id/galleryViewerFragment"
+              android:name="com.example.list4_gallery.GalleryViewerFragment"
+              tools:layout="@layout/fragment_gallery_viewer"
+              android:layout_weight="3"/>
+    <fragment android:layout_width="match_parent" android:layout_height="match_parent"
+              android:id="@+id/imageViewerFragment"
+              android:name="com.example.list4_gallery.ImageViewerFragment"
+              tools:layout="@layout/fragment_image_viewer"  android:layout_weight="4"/>
+
+</android.widget.LinearLayout>

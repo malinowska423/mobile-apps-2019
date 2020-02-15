@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewTaskActivity"
+        android:layout_margin="0dp" android:orientation="vertical"
+        android:background="@color/backgroundColor" android:padding="20dp">
+    <TextView
+            android:text="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/textView3" android:baselineAligned="false"
+            android:textColor="@color/colorPrimary"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/taskName" android:autofillHints="" android:textColor="@color/colorPrimary"/>
+    <TextView
+            android:text="@string/date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/textView4"    android:textColor="@color/colorPrimary"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="44dp" android:id="@+id/taskDateDropdown"
+            android:background="@color/colorPrimaryDark"/>
+    <TextView
+            android:text="@string/priority"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/textView5"    android:textColor="@color/colorPrimary"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:id="@+id/taskPriority" android:textColor="@color/colorPrimary"
+            android:checkedButton="@+id/radioButton" android:orientation="horizontal">
+        <RadioButton
+                android:text="@string/prio_radio_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+        <RadioButton
+                android:text="@string/prio_radio_norm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+        <RadioButton
+                android:text="@string/prio_radio_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+    </RadioGroup>
+    <TextView
+            android:text="@string/type"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/textView6"    android:textColor="@color/colorPrimary"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:id="@+id/taskType" android:textColor="@color/colorPrimary"
+            android:checkedButton="@+id/type_radio4"    android:orientation="horizontal">
+
+        <RadioButton
+                android:text="@string/type_radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/type_radio" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+        <RadioButton
+                android:text="@string/type_radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/type_radio2" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+        <RadioButton
+                android:text="@string/type_radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/type_radio3" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+        <RadioButton
+                android:text="@string/type_radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/type_radio4" android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+    </RadioGroup>
+    <TextView
+            android:text="@string/errorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/errorMessage" android:textAlignment="center"
+            android:textColor="@color/errorMessage" android:visibility="invisible"/>
+    <Button
+            android:text="@string/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/save" android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccentCold" android:onClick="save"/>
+</LinearLayout>
